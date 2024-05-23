@@ -15,7 +15,7 @@ export default function MorphMenu() {
     }
   }, [isOpen]);
 
-  const arr = [1, 2, 3];
+  const arr = ["Home", "About", "Settings"];
 
   return (
     <motion.div
@@ -37,13 +37,13 @@ export default function MorphMenu() {
       className="flex ml-auto w-12 h-12 bg-white rounded-xl flex-col justify-evenly gap-1 p-3 transition relative"
       onClick={() => setIsOpen(!isOpen)}
     >
-      <motion.div className="text-black absolute flex justify-center self-center cursor-default flex-col gap-12">
+      <motion.div className="text-black absolute flex justify-center self-center cursor-default items-center flex-col gap-12">
         {arr.map((item, i) => (
           <motion.h2
             animate={{ opacity: isOpen ? 1 : 0 }}
             transition={{ opacity: { delay: isOpen ? 0.5 + i * 0.1 : 0 } }}
           >
-            Hello
+            {item}
           </motion.h2>
         ))}
       </motion.div>

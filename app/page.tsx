@@ -2,7 +2,7 @@ import PhoneContainer from "@/components/PhoneContainer";
 
 export default function Home() {
   return (
-    <div className="p-8 h-full w-full flex">
+    <div className="p-8 h-full w-full flex justify-center">
       <PhoneContainer />
     </div>
   );
