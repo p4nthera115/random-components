@@ -40,8 +40,12 @@ export default function MorphMenu() {
       <motion.div className="text-black absolute flex justify-center self-center cursor-default items-center flex-col gap-12">
         {arr.map((item, i) => (
           <motion.h2
-            animate={{ opacity: isOpen ? 1 : 0 }}
+            animate={{
+              opacity: isOpen ? 1 : 0,
+              display: isOpen ? "block" : "none",
+            }}
             transition={{ opacity: { delay: isOpen ? 0.5 + i * 0.1 : 0 } }}
+            className={`cursor-pointer hover:scale-[105%] transition`}
           >
             {item}
           </motion.h2>
