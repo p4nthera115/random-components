@@ -33,6 +33,7 @@ export default function Spacing() {
             width: "100%",
           }}
           transition={{
+            delay: 1,
             duration: 1,
             ease: "circOut",
           }}
@@ -48,6 +49,7 @@ export default function Spacing() {
             height: "100%",
           }}
           transition={{
+            delay: 1,
             duration: 1,
             ease: "circOut",
           }}
@@ -57,8 +59,15 @@ export default function Spacing() {
           {height && <AnimatedCounter from={0} to={height / 2} />}px
         </span>
       </div>
-      <div className="flex justify-center w-1/2 h-1/4 items-center self-center z-10 bg-gradient-radial from-black  to-transparent">
-        <div className="font-bold text-5xl cursor-default">Spacing</div>
+      <div className="flex justify-center w-1/2 h-1/4 items-center self-center z-10 bg-gradient-radial from-black to-transparent">
+        <motion.h1
+          whileHover={{
+            letterSpacing: "0.1em",
+          }}
+          className="font-bold text-5xl cursor-default "
+        >
+          Spacing
+        </motion.h1>
       </div>
     </>
   );
@@ -75,6 +84,7 @@ function AnimatedCounter({ from, to }: { from: number; to: number }) {
     element.textContent = from.toString();
 
     const controls = animate(from, to, {
+      delay: 1,
       duration: 1.5,
       ease: "circOut",
       onUpdate(value) {
