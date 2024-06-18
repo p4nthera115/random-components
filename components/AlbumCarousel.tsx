@@ -51,9 +51,7 @@ export default function AlbumCarousel() {
           backgroundImage: `linear-gradient(${color}, rgba(255,0,0,0))`,
         }}
         className={`${color} absolute h-full w-full`}
-      ></motion.div>
-
-      <linearGradient />
+      />
 
       <div className="p-6 flex flex-col h-full w-full gap-6 z-20">
         <section className="h-[40%] flex flex-row gap-10 p-8 rounded-3xl bg-[#d3ccc3]/50 items-center ">
