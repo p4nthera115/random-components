@@ -2,6 +2,7 @@ import MorphMenu from "@/components/MorphMenu";
 import MorphSignup from "@/components/MorphSignup";
 import Spacing from "@/components/Spacing";
 import SpotifyRedesign from "@/components/SpotifyRedesign";
+import TileNav from "@/components/TileNav";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       {/* <MorphMenu /> */}
       {/* <MorphSignup /> */}
       {/* <Spacing /> */}
-      <SpotifyRedesign />
+      {/* <SpotifyRedesign /> */}
+      <TileNav />
     </div>
   );
 }
