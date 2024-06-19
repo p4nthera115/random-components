@@ -30,11 +30,11 @@ export default function TileNav() {
           height: { delay: 0.4 },
           width: { delay: 0.4 },
           x: {
-            type: "tween",
+            type: "spring",
             ease: "easeInOut",
           },
           y: {
-            type: "tween",
+            type: "spring",
             ease: "easeInOut",
           },
         }}
