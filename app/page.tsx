@@ -1,7 +1,7 @@
 import MorphMenu from "@/components/MorphMenu";
 import MorphSignup from "@/components/MorphSignup";
 import Spacing from "@/components/Spacing";
-import AlbumCarousel from "@/components/AlbumCarousel";
+import SpotifyRedesign from "@/components/SpotifyRedesign";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       {/* <MorphMenu /> */}
       {/* <MorphSignup /> */}
       {/* <Spacing /> */}
-      <AlbumCarousel />
+      <SpotifyRedesign />
     </div>
   );
 }
