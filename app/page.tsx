@@ -3,6 +3,7 @@ import MorphSignup from "@/components/MorphSignup";
 import Spacing from "@/components/Spacing";
 import SpotifyRedesign from "@/components/SpotifyRedesign";
 import TileNav from "@/components/TileNav";
+import ThreeTileNav from "@/components/ThreeTileNav";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       {/* <MorphSignup /> */}
       {/* <Spacing /> */}
       {/* <SpotifyRedesign /> */}
-      <TileNav />
+      {/* <TileNav /> */}
+      <ThreeTileNav />
     </div>
   );
 }

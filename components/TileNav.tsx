@@ -3,6 +3,7 @@
 import { DragControls, motion, useDragControls } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import Image from "next/image";
+import { Canvas } from "@react-three/fiber";
 
 export default function TileNav() {
   const controls = useDragControls();
@@ -14,40 +15,42 @@ export default function TileNav() {
   const [socialActive, setSocialActive] = useState(false);
 
   return (
-    <div className="h-full w-full flex justify-center items-center bg-[#f3f0f7]">
-      {/* <Image
+    <>
+      <div className="h-full w-full flex justify-center items-center bg-[#d9d5de]">
+        {/* <Image
         src={"/grid.png"}
         alt="grid"
         height={500}
         width={500}
         className="object-fill pointer-events-none"
       /> */}
-      <MainButton
-        controls={controls}
-        mainActive={mainActive}
-        setMainActive={setMainActive}
-        mainHover={mainHover}
-        setMainHover={setMainHover}
-        setProjActive={setProjActive}
-        setSocialActive={setSocialActive}
-      />
-      <SocialButton
-        controls={controls}
-        mainActive={mainActive}
-        socialActive={socialActive}
-        setSocialActive={setSocialActive}
-        socialHover={socialHover}
-        setSocialHover={setSocialHover}
-      />
-      <ProjButton
-        controls={controls}
-        mainActive={mainActive}
-        projActive={projActive}
-        setProjActive={setProjActive}
-        projHover={projHover}
-        setProjHover={setProjHover}
-      />
-    </div>
+        <MainButton
+          controls={controls}
+          mainActive={mainActive}
+          setMainActive={setMainActive}
+          mainHover={mainHover}
+          setMainHover={setMainHover}
+          setProjActive={setProjActive}
+          setSocialActive={setSocialActive}
+        />
+        <SocialButton
+          controls={controls}
+          mainActive={mainActive}
+          socialActive={socialActive}
+          setSocialActive={setSocialActive}
+          socialHover={socialHover}
+          setSocialHover={setSocialHover}
+        />
+        <ProjButton
+          controls={controls}
+          mainActive={mainActive}
+          projActive={projActive}
+          setProjActive={setProjActive}
+          projHover={projHover}
+          setProjHover={setProjHover}
+        />
+      </div>
+    </>
   );
 }
 
