@@ -3,7 +3,7 @@ import MorphSignup from "@/components/MorphSignup";
 import Spacing from "@/components/Spacing";
 import SpotifyRedesign from "@/components/SpotifyRedesign";
 import TileNav from "@/components/TileNav";
-import ThreeTileNavCanvas from "@/components/ThreeTileNavCanvas";
+import Canvas from "@/components/Canvas";
 import BorderRadiusSlider from "@/components/BorderRadiusSlider";
 
 export default function Home() {
@@ -14,8 +14,8 @@ export default function Home() {
       {/* <Spacing /> */}
       {/* <SpotifyRedesign /> */}
       {/* <TileNav /> */}
-      {/* <ThreeTileNavCanvas /> */}
-      <BorderRadiusSlider />
+      <Canvas />
+      {/* <BorderRadiusSlider /> */}
     </div>
   );
 }
