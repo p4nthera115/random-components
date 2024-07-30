@@ -6,17 +6,14 @@ import {
   useState,
   useRef,
   useEffect,
-  forwardRef,
   RefObject,
   createRef,
   useLayoutEffect,
   useMemo,
 } from "react";
 import { ThreeEvent, useThree } from "@react-three/fiber";
-import { MapControls, Grid, Html } from "@react-three/drei";
-// import { DragControls, motion, useDragControls } from "framer-motion";
+import { MapControls, Grid } from "@react-three/drei";
 import { motion } from "framer-motion-3d";
-import { Vector3 } from "three";
 import * as THREE from "three";
 
 type ButtonRefs = {
@@ -35,6 +32,7 @@ export default function ThreeTileNav() {
   const [projectsActive, setProjectsActive] = useState(false);
   const [socialHover, setSocialHover] = useState(false);
   const [socialActive, setSocialActive] = useState(false);
+  const [radius, setRadius] = useState(0);
 
   const mapControlsRef = useRef<any>(null);
 
@@ -77,6 +75,8 @@ export default function ThreeTileNav() {
         setIsActive={setMainActive}
         isHover={mainHover}
         setIsHover={setMainHover}
+        radius={radius}
+        setRadius={setRadius}
         setOtherButtonsInactive={() => {
           setSocialActive(false);
           setProjectsActive(false);
@@ -89,6 +89,8 @@ export default function ThreeTileNav() {
         setIsActive={setSocialActive}
         isHover={socialHover}
         setIsHover={setSocialHover}
+        radius={radius}
+        setRadius={setRadius}
         setOtherButtonsInactive={() => {
           setMainActive(false);
           setProjectsActive(false);
@@ -101,6 +103,8 @@ export default function ThreeTileNav() {
         setIsActive={setProjectsActive}
         isHover={projectsHover}
         setIsHover={setProjectsHover}
+        radius={radius}
+        setRadius={setRadius}
         setOtherButtonsInactive={() => {
           setMainActive(false);
           setSocialActive(false);
@@ -118,6 +122,8 @@ interface ButtonProps {
   setIsActive: Dispatch<SetStateAction<boolean>>;
   isHover: boolean;
   setIsHover: Dispatch<SetStateAction<boolean>>;
+  radius: number;
+  setRadius: Dispatch<SetStateAction<number>>;
   setOtherButtonsInactive: () => void;
 }
 
@@ -129,13 +135,44 @@ const Button: React.FC<ButtonProps> = ({
   setIsActive,
   isHover,
   setIsHover,
+  radius,
+  setRadius,
   setOtherButtonsInactive,
 }) => {
+  function transitionNumber(
+    numberA: number,
+    numberB: number,
+    speed: number,
+    callback: (currentValue: number) => void
+  ): void {
+    const step = 0.01;
+    const direction = numberA < numberB ? 1 : -1;
+    let currentValue = numberA;
+
+    function updateValue() {
+      if (
+        (direction === 1 && currentValue < numberB) ||
+        (direction === -1 && currentValue > numberB)
+      ) {
+        currentValue = Number((currentValue + step * direction).toFixed(2));
+        callback(currentValue);
+        setTimeout(updateValue, speed);
+      } else {
+        callback(numberB);
+      }
+    }
+
+    updateValue();
+  }
+
   const handleClick = (e: ThreeEvent<MouseEvent>) => {
     e.stopPropagation();
     setIsActive(!isActive);
+    transitionNumber(0.2, 0.5, 1, (currentValue) => {
+      setRadius(currentValue);
+    });
     setOtherButtonsInactive();
-    onClick;
+    onClick();
   };
 
   return (
@@ -146,7 +183,6 @@ const Button: React.FC<ButtonProps> = ({
         onPointerOut={() => setIsHover(false)}
         animate={{
           scale: isActive ? 2 : isHover ? 1.1 : 1,
-          rotateY: isActive ? Math.PI / 4 : 0,
         }}
         transition={{
           type: "spring",
@@ -155,8 +191,10 @@ const Button: React.FC<ButtonProps> = ({
           duration: 0.5,
         }}
       >
-        <SquircleGeometry radius={0.2} />
-        <meshBasicMaterial color="tomato" />
+        <mesh>
+          <SquircleGeometry radius={radius} />
+        </mesh>
+        <meshStandardMaterial color="white" />
       </motion.mesh>
     </motion.group>
   );

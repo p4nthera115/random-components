@@ -1,0 +1,23 @@
+.slider {
+  --thumb-size: 25px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  background: mediumpurple;
+  cursor: pointer;
+  border-radius: var(--thumb-radius);
+  transition: border-radius ease;
+}
+
+.slider::-moz-range-thumb {
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  background: mediumpurple;
+  cursor: pointer;
+  border-radius: var(--thumb-radius);
+  transition: border-radius ease;
+}
