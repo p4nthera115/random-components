@@ -5,6 +5,7 @@ import SpotifyRedesign from "@/components/SpotifyRedesign";
 import TileNav from "@/components/TileNav";
 import Canvas from "@/components/Canvas";
 import BorderRadiusSlider from "@/components/BorderRadiusSlider";
+import Sign from "@/components/Dailies/Sign";
 
 export default function Home() {
   return (
@@ -14,8 +15,9 @@ export default function Home() {
       {/* <Spacing /> */}
       {/* <SpotifyRedesign /> */}
       {/* <TileNav /> */}
-      <Canvas />
+      {/* <Canvas /> */}
       {/* <BorderRadiusSlider /> */}
+      <Sign />
     </div>
   );
 }

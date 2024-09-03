@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Varela_Round } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const varelaRound = Varela_Round({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + ` h-dvh w-dvh overflow-hidden`}>
+      <body className={varelaRound.className + ` h-dvh w-dvh overflow-hidden`}>
         {children}
       </body>
     </html>
