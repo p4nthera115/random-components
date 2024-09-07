@@ -6,6 +6,7 @@ import TileNav from "@/components/TileNav";
 import Canvas from "@/components/Canvas";
 import BorderRadiusSlider from "@/components/BorderRadiusSlider";
 import Sign from "@/components/Dailies/Sign";
+import HoverMenu from "@/components/Dailies/HoverMenu";
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
       {/* <TileNav /> */}
       {/* <Canvas /> */}
       {/* <BorderRadiusSlider /> */}
-      <Sign />
+      {/* <Sign /> */}
+      <HoverMenu />
     </div>
   );
 }
