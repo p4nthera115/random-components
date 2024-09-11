@@ -7,10 +7,13 @@ import Canvas from "@/components/Canvas";
 import BorderRadiusSlider from "@/components/BorderRadiusSlider";
 import Sign from "@/components/Dailies/Sign";
 import HoverMenu from "@/components/Dailies/HoverMenu";
+import DotGrid from "@/components/DotGrid";
+import BlurMenuCards from "@/components/Dailies/BlurMenuCards";
 
 export default function Home() {
   return (
-    <div className="h-full w-full flex bg-white justify-center items-center">
+    <div className="h-full w-full flex bg-[#f2f2f2] justify-center items-center text-black/70 font-semibold text-sm">
+      <DotGrid />
       {/* <MorphMenu /> */}
       {/* <MorphSignup /> */}
       {/* <Spacing /> */}
@@ -19,7 +22,8 @@ export default function Home() {
       {/* <Canvas /> */}
       {/* <BorderRadiusSlider /> */}
       {/* <Sign /> */}
-      <HoverMenu />
+      {/* <HoverMenu /> */}
+      <BlurMenuCards />
     </div>
   );
 }
