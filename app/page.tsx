@@ -1,3 +1,5 @@
+"use client";
+
 import MorphMenu from "@/components/MorphMenu";
 import MorphSignup from "@/components/MorphSignup";
 import Spacing from "@/components/Spacing";
@@ -9,6 +11,7 @@ import Sign from "@/components/Dailies/Sign";
 import HoverMenu from "@/components/Dailies/HoverMenu";
 import DotGrid from "@/components/DotGrid";
 import BlurMenuCards from "@/components/Dailies/BlurMenuCards";
+import SignButton from "@/components/Dailies/SignButton";
 
 export default function Home() {
   return (
@@ -23,7 +26,8 @@ export default function Home() {
       {/* <BorderRadiusSlider /> */}
       {/* <Sign /> */}
       {/* <HoverMenu /> */}
-      <BlurMenuCards />
+      {/* <BlurMenuCards /> */}
+      <SignButton />
     </div>
   );
 }
