@@ -13,6 +13,7 @@ import DotGrid from "@/components/DotGrid";
 import BlurMenuCards from "@/components/Dailies/BlurMenuCards";
 import SignButton from "@/components/Dailies/SignButton";
 import CircleDrag from "@/components/Dailies/CircleDrag";
+import TooltipVariation from "@/components/Dailies/TooltipVariation";
 
 export default function Home() {
   return (
@@ -29,7 +30,8 @@ export default function Home() {
       {/* <HoverMenu /> */}
       {/* <BlurMenuCards /> */}
       {/* <SignButton /> */}
-      <CircleDrag />
+      {/* <CircleDrag /> */}
+      <TooltipVariation />
     </div>
   );
 }
