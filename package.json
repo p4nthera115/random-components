@@ -19,6 +19,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
+    "rmc-picker": "^5.0.10",
     "three": "^0.165.0"
   },
   "devDependencies": {

@@ -1,5 +1,6 @@
 "use client";
 
+import DotGrid from "@/components/DotGrid";
 import MorphMenu from "@/components/MorphMenu";
 import MorphSignup from "@/components/MorphSignup";
 import Spacing from "@/components/Spacing";
@@ -9,16 +10,18 @@ import Canvas from "@/components/Canvas";
 import BorderRadiusSlider from "@/components/BorderRadiusSlider";
 import Sign from "@/components/Dailies/Sign";
 import HoverMenu from "@/components/Dailies/HoverMenu";
-import DotGrid from "@/components/DotGrid";
 import BlurMenuCards from "@/components/Dailies/BlurMenuCards";
 import SignButton from "@/components/Dailies/SignButton";
 import CircleDrag from "@/components/Dailies/CircleDrag";
 import TooltipVariation from "@/components/Dailies/TooltipVariation";
+import GradientComponent from "@/components/Dailies/GradientComponent";
+import Picker from "../components/Dailies/picker";
 
 export default function Home() {
   return (
     <div className="h-full w-full flex bg-[#f2f2f2] justify-center items-center text-black/70 font-semibold text-sm">
       <DotGrid />
+      {/* <img className="absolute" src="p4n.png" height={300} width={300} /> */}
       {/* <MorphMenu /> */}
       {/* <MorphSignup /> */}
       {/* <Spacing /> */}
@@ -31,7 +34,8 @@ export default function Home() {
       {/* <BlurMenuCards /> */}
       {/* <SignButton /> */}
       {/* <CircleDrag /> */}
-      <TooltipVariation />
+      {/* <TooltipVariation /> */}
+      <GradientComponent />
     </div>
   );
 }
