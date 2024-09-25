@@ -16,6 +16,8 @@ import CircleDrag from "@/components/Dailies/CircleDrag";
 import TooltipVariation from "@/components/Dailies/TooltipVariation";
 import GradientComponent from "@/components/Dailies/GradientComponent";
 import Picker from "../components/Dailies/picker";
+import GlassButton from "@/components/Dailies/GlassButton";
+import MetallicButton from "@/components/Dailies/MetallicButton";
 
 export default function Home() {
   return (
@@ -35,7 +37,9 @@ export default function Home() {
       {/* <SignButton /> */}
       {/* <CircleDrag /> */}
       {/* <TooltipVariation /> */}
-      <GradientComponent />
+      {/* <GradientComponent /> */}
+      {/* <GlassButton /> */}
+      <MetallicButton />
     </div>
   );
 }
