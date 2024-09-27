@@ -18,7 +18,7 @@ import GradientComponent from "@/components/Dailies/GradientComponent";
 import Picker from "../components/Dailies/picker";
 import GlassButton from "@/components/Dailies/GlassButton";
 import MetallicButton from "@/components/Dailies/MetallicButton";
-import RetroButtons from "@/components/Dailies/RetroButtons";
+import Switch from "@/components/Dailies/Switch";
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
       {/* <GradientComponent /> */}
       {/* <GlassButton /> */}
       {/* <MetallicButton /> */}
-      <RetroButtons />
+      <Switch />
     </div>
   );
 }
