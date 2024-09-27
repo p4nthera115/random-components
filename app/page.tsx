@@ -18,6 +18,7 @@ import GradientComponent from "@/components/Dailies/GradientComponent";
 import Picker from "../components/Dailies/picker";
 import GlassButton from "@/components/Dailies/GlassButton";
 import MetallicButton from "@/components/Dailies/MetallicButton";
+import RetroButtons from "@/components/Dailies/RetroButtons";
 
 export default function Home() {
   return (
@@ -39,7 +40,8 @@ export default function Home() {
       {/* <TooltipVariation /> */}
       {/* <GradientComponent /> */}
       {/* <GlassButton /> */}
-      <MetallicButton />
+      {/* <MetallicButton /> */}
+      <RetroButtons />
     </div>
   );
 }
