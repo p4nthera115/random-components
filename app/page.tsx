@@ -20,6 +20,7 @@ import GlassButton from "@/components/Dailies/GlassButton";
 import MetallicButton from "@/components/Dailies/MetallicButton";
 import Switch from "@/components/Dailies/Switch";
 import ColorMetalButton from "@/components/Dailies/ColorMetalButton";
+import SoftButton from "@/components/Dailies/SoftButton";
 
 export default function Home() {
   return (
@@ -43,7 +44,8 @@ export default function Home() {
       {/* <GlassButton /> */}
       {/* <MetallicButton /> */}
       {/* <Switch /> */}
-      <ColorMetalButton />
+      {/* <ColorMetalButton /> */}
+      <SoftButton />
     </div>
   );
 }

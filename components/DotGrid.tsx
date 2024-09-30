@@ -1,6 +1,6 @@
 export default function DotGrid() {
   return (
-    <div className="fixed w-full h-full">
+    <div className="fixed w-full h-full z-0">
       <div className="absolute inset-0">
         <div
           className="w-full h-full"
