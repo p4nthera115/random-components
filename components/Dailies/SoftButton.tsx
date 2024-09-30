@@ -3,7 +3,6 @@
 export default function SoftButton() {
   return (
     <button className="absolute h-32 w-44 rounded-lg bg-neutral-200 overflow-hidden justify-center items-center flex shadow-lg shadow-neutral-500 active:scale-95 transition duration-75">
-      {/* <div className="absolute h-32 w-48 rounded-lg bg-gradient-to-bl from-neutral-200 from-45% to-neutral-700 p-1"> */}
       <div className="absolute w-[96%] h-[96%] bg-[#c1c1c1] rounded-[0.40rem] blur-[1px] z-10 flex"></div>
       <div className="absolute w-full h-2 bottom-0 bg-gradient-to-t from-neutral-700"></div>
       <div className="absolute w-2 h-[95%] left-0 bg-gradient-to-r from-neutral-400 blur-[1px]"></div>
