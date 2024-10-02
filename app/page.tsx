@@ -21,6 +21,7 @@ import MetallicButton from "@/components/Dailies/MetallicButton";
 import Switch from "@/components/Dailies/Switch";
 import ColorMetalButton from "@/components/Dailies/ColorMetalButton";
 import SoftButton from "@/components/Dailies/SoftButton";
+import P4nButtons from "@/components/Dailies/P4nButtons";
 
 export default function Home() {
   return (
@@ -45,7 +46,8 @@ export default function Home() {
       {/* <MetallicButton /> */}
       {/* <Switch /> */}
       {/* <ColorMetalButton /> */}
-      <SoftButton />
+      {/* <SoftButton /> */}
+      <P4nButtons />
     </div>
   );
 }
