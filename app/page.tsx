@@ -22,6 +22,7 @@ import Switch from "@/components/Dailies/Switch";
 import ColorMetalButton from "@/components/Dailies/ColorMetalButton";
 import SoftButton from "@/components/Dailies/SoftButton";
 import P4nButtons from "@/components/Dailies/P4nButtons";
+import ArrowToTickSlider from "@/components/Dailies/ArrowToTickSlider";
 
 export default function Home() {
   return (
@@ -47,7 +48,8 @@ export default function Home() {
       {/* <Switch /> */}
       {/* <ColorMetalButton /> */}
       {/* <SoftButton /> */}
-      <P4nButtons />
+      {/* <P4nButtons /> */}
+      <ArrowToTickSlider />
     </div>
   );
 }
