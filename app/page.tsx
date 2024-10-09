@@ -23,6 +23,7 @@ import ColorMetalButton from "@/components/Dailies/ColorMetalButton";
 import SoftButton from "@/components/Dailies/SoftButton";
 import P4nButtons from "@/components/Dailies/P4nButtons";
 import ArrowToTickSlider from "@/components/Dailies/ArrowToTickSlider";
+import LineWebsitePageAnimation from "@/components/Dailies/LineWebsitePageAnimation";
 
 export default function Home() {
   return (
@@ -49,7 +50,8 @@ export default function Home() {
       {/* <ColorMetalButton /> */}
       {/* <SoftButton /> */}
       {/* <P4nButtons /> */}
-      <ArrowToTickSlider />
+      {/* <ArrowToTickSlider /> */}
+      <LineWebsitePageAnimation />
     </div>
   );
 }
