@@ -24,6 +24,7 @@ import SoftButton from "@/components/Dailies/SoftButton";
 import P4nButtons from "@/components/Dailies/P4nButtons";
 import ArrowToTickSlider from "@/components/Dailies/ArrowToTickSlider";
 import LineWebsitePageAnimation from "@/components/Dailies/LineWebsitePageAnimation";
+import MenuButtons from "@/components/Dailies/MenuButtons";
 
 export default function Home() {
   return (
@@ -52,6 +53,7 @@ export default function Home() {
       {/* <P4nButtons /> */}
       {/* <ArrowToTickSlider /> */}
       <LineWebsitePageAnimation />
+      <MenuButtons />
     </div>
   );
 }
