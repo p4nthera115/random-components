@@ -58,3 +58,7 @@
     transform: translate(150%, -50%) scale(1.4);
   }
 }
+
+.card_flip {
+  transform: rotateY(180deg);
+}

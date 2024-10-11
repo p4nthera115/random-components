@@ -25,6 +25,7 @@ import P4nButtons from "@/components/Dailies/P4nButtons";
 import ArrowToTickSlider from "@/components/Dailies/ArrowToTickSlider";
 import LineWebsitePageAnimation from "@/components/Dailies/LineWebsitePageAnimation";
 import MenuButtons from "@/components/Dailies/MenuButtons";
+import DarkModeButton from "@/components/Dailies/DarkModeButton";
 
 export default function Home() {
   return (
@@ -52,8 +53,9 @@ export default function Home() {
       {/* <SoftButton /> */}
       {/* <P4nButtons /> */}
       {/* <ArrowToTickSlider /> */}
-      <LineWebsitePageAnimation />
-      <MenuButtons />
+      {/* <LineWebsitePageAnimation /> */}
+      {/* <MenuButtons /> */}
+      <DarkModeButton />
     </div>
   );
 }

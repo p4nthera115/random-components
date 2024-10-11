@@ -5,7 +5,7 @@ export default function DotGrid() {
         <div
           className="w-full h-full"
           style={{
-            backgroundImage: `radial-gradient(#0000001b 1px, transparent 1px)`,
+            backgroundImage: `radial-gradient(#d8d8d8 1px, transparent 1px)`,
             backgroundSize: "20px 20px",
           }}
         ></div>
