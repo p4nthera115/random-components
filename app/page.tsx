@@ -1,6 +1,7 @@
 "use client";
 
 import DotGrid from "@/components/DotGrid";
+import DarkDotGrid from "@/components/DarkDotGrid";
 import MorphMenu from "@/components/MorphMenu";
 import MorphSignup from "@/components/MorphSignup";
 import Spacing from "@/components/Spacing";
@@ -26,11 +27,14 @@ import ArrowToTickSlider from "@/components/Dailies/ArrowToTickSlider";
 import LineWebsitePageAnimation from "@/components/Dailies/LineWebsitePageAnimation";
 import MenuButtons from "@/components/Dailies/MenuButtons";
 import DarkModeButton from "@/components/Dailies/DarkModeButton";
+import VerificationCode from "../components/Dailies/VerificationCode";
 
 export default function Home() {
   return (
-    <div className="h-full w-full flex bg-[#f2f2f2] justify-center items-center text-black/70 font-semibold text-sm">
-      <DotGrid />
+    // <div className="h-full w-full flex bg-[#f2f2f2] justify-center items-center text-black/70 font-semibold text-sm">
+    <div className="h-full w-full flex bg-gray-950 justify-center items-center text-black/70 font-semibold text-sm">
+      {/* <DotGrid /> */}
+      <DarkDotGrid />
       {/* <img className="absolute" src="p4n.png" height={300} width={300} /> */}
       {/* <MorphMenu /> */}
       {/* <MorphSignup /> */}
@@ -55,7 +59,8 @@ export default function Home() {
       {/* <ArrowToTickSlider /> */}
       {/* <LineWebsitePageAnimation /> */}
       {/* <MenuButtons /> */}
-      <DarkModeButton />
+      {/* <DarkModeButton /> */}
+      <VerificationCode />
     </div>
   );
 }
