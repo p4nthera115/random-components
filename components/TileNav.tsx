@@ -16,7 +16,7 @@ export default function TileNav() {
 
   return (
     <>
-      <div className="h-full w-full flex justify-center items-center bg-[#d9d5de]">
+      <div className="h-full w-full flex justify-center items-center">
         {/* <Image
         src={"/grid.png"}
         alt="grid"
@@ -113,7 +113,7 @@ function MainButton({
       drag={mainHover && mainActive === false}
       dragConstraints={{ top: 5, bottom: 5, left: 5, right: 5 }}
       dragElastic={0.1}
-      className="absolute flex aspect-square h-40 bg-white rounded-full"
+      className="absolute flex aspect-square h-40 bg-white rounded-full shadow-lg z-10"
     ></motion.button>
   );
 }
@@ -147,13 +147,13 @@ function ProjButton({
       animate={
         mainActive
           ? {
-              height: projActive ? "18rem" : "10rem",
-              width: projActive ? "18rem" : "10rem",
-              x: projHover ? "" : 5,
-              y: projHover ? "" : 5,
-              borderRadius: projActive ? "3.5rem" : "5rem",
-              marginLeft: projActive ? 620 : 600,
-            }
+            height: projActive ? "18rem" : "10rem",
+            width: projActive ? "18rem" : "10rem",
+            x: projHover ? "" : 5,
+            y: projHover ? "" : 5,
+            borderRadius: projActive ? "3.5rem" : "5rem",
+            marginLeft: projActive ? 620 : 600,
+          }
           : {}
       }
       transition={{
@@ -180,7 +180,7 @@ function ProjButton({
       drag={projHover && projActive === false}
       dragConstraints={{ top: 5, bottom: 5, left: 5, right: 5 }}
       dragElastic={0.1}
-      className="flex aspect-square h-40 bg-white rounded-full"
+      className="flex aspect-square h-40 bg-white rounded-full shadow-lg"
     ></motion.button>
   );
 }
@@ -214,13 +214,13 @@ function SocialButton({
       animate={
         mainActive
           ? {
-              height: socialActive ? "18rem" : "10rem",
-              width: socialActive ? "18rem" : "10rem",
-              x: socialHover ? "" : 5,
-              y: socialHover ? "" : 5,
-              borderRadius: socialActive ? "3.5rem" : "5rem",
-              marginLeft: socialActive ? -620 : -600,
-            }
+            height: socialActive ? "18rem" : "10rem",
+            width: socialActive ? "18rem" : "10rem",
+            x: socialHover ? "" : 5,
+            y: socialHover ? "" : 5,
+            borderRadius: socialActive ? "3.5rem" : "5rem",
+            marginLeft: socialActive ? -620 : -600,
+          }
           : {}
       }
       transition={{
@@ -247,7 +247,7 @@ function SocialButton({
       drag={socialHover && socialActive === false}
       dragConstraints={{ top: 5, bottom: 5, left: 5, right: 5 }}
       dragElastic={0.1}
-      className="flex aspect-square h-40 bg-white rounded-full"
+      className="flex aspect-square h-40 bg-white rounded-full shadow-lg"
     ></motion.button>
   );
 }
