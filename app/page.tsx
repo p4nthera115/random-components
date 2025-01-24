@@ -17,7 +17,8 @@ import CircleDrag from "@/components/Dailies/CircleDrag";
 import TooltipVariation from "@/components/Dailies/TooltipVariation";
 import GradientComponent from "@/components/Dailies/GradientComponent";
 import Picker from "../components/Dailies/picker";
-import GlassButton from "@/components/Dailies/GlassButton";
+import GlassButton, { GlassButtonDarker } from "@/components/Dailies/GlassButton";
+import ColorGlassButton from "@/components/Dailies/ColorGlassButton";
 import MetallicButton from "@/components/Dailies/MetallicButton";
 import Switch from "@/components/Dailies/Switch";
 import ColorMetalButton from "@/components/Dailies/ColorMetalButton";
@@ -40,7 +41,7 @@ export default function Home() {
       {/* <MorphSignup /> */}
       {/* <Spacing /> */}
       {/* <SpotifyRedesign /> */}
-      <TileNav />
+      {/* <TileNav /> */}
       {/* <Canvas /> */}
       {/* <BorderRadiusSlider /> */}
       {/* <Sign /> */}
@@ -50,7 +51,7 @@ export default function Home() {
       {/* <CircleDrag /> */}
       {/* <TooltipVariation /> */}
       {/* <GradientComponent /> */}
-      {/* <GlassButton /> */}
+      {/* <ColorGlassButton /> */}
       {/* <MetallicButton /> */}
       {/* <Switch /> */}
       {/* <ColorMetalButton /> */}
@@ -61,6 +62,8 @@ export default function Home() {
       {/* <MenuButtons /> */}
       {/* <DarkModeButton /> */}
       {/* <VerificationCode /> */}
+      {/* <GlassButton /> */}
+      <GlassButtonDarker />
     </div>
   );
 }
