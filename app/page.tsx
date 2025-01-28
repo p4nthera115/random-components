@@ -29,6 +29,7 @@ import LineWebsitePageAnimation from "@/components/Dailies/LineWebsitePageAnimat
 import MenuButtons from "@/components/Dailies/MenuButtons";
 import DarkModeButton from "@/components/Dailies/DarkModeButton";
 import VerificationCode from "../components/Dailies/VerificationCode";
+import NewGradients from "@/components/Dailies/NewGradients";
 
 export default function Home() {
   return (
@@ -36,34 +37,38 @@ export default function Home() {
       {/* <div className="h-full w-full flex bg-gray-950 justify-center items-center text-black/70 font-semibold text-sm"> */}
       <DotGrid />
       {/* <DarkDotGrid /> */}
-      {/* <img className="absolute" src="p4n.png" height={300} width={300} /> */}
-      {/* <MorphMenu /> */}
-      {/* <MorphSignup /> */}
-      {/* <Spacing /> */}
-      {/* <SpotifyRedesign /> */}
-      {/* <TileNav /> */}
-      {/* <Canvas /> */}
-      {/* <BorderRadiusSlider /> */}
-      {/* <Sign /> */}
-      {/* <HoverMenu /> */}
-      {/* <BlurMenuCards /> */}
-      {/* <SignButton /> */}
-      {/* <CircleDrag /> */}
-      {/* <TooltipVariation /> */}
-      {/* <GradientComponent /> */}
-      {/* <ColorGlassButton /> */}
-      {/* <MetallicButton /> */}
-      {/* <Switch /> */}
-      {/* <ColorMetalButton /> */}
-      {/* <SoftButton /> */}
-      {/* <P4nButtons /> */}
-      {/* <ArrowToTickSlider /> */}
-      {/* <LineWebsitePageAnimation /> */}
-      {/* <MenuButtons /> */}
-      {/* <DarkModeButton /> */}
-      {/* <VerificationCode /> */}
-      {/* <GlassButton /> */}
-      <GlassButtonDarker />
+
+      <div className="z-10">
+        {/* <img className="absolute" src="p4n.png" height={300} width={300} /> */}
+        {/* <MorphMenu /> */}
+        {/* <MorphSignup /> */}
+        {/* <Spacing /> */}
+        {/* <SpotifyRedesign /> */}
+        {/* <TileNav /> */}
+        {/* <Canvas /> */}
+        {/* <BorderRadiusSlider /> */}
+        {/* <Sign /> */}
+        {/* <HoverMenu /> */}
+        {/* <BlurMenuCards /> */}
+        {/* <SignButton /> */}
+        {/* <CircleDrag /> */}
+        {/* <TooltipVariation /> */}
+        {/* <GradientComponent /> */}
+        {/* <ColorGlassButton /> */}
+        {/* <MetallicButton /> */}
+        {/* <Switch /> */}
+        {/* <ColorMetalButton /> */}
+        {/* <SoftButton /> */}
+        {/* <P4nButtons /> */}
+        {/* <ArrowToTickSlider /> */}
+        {/* <LineWebsitePageAnimation /> */}
+        {/* <MenuButtons /> */}
+        {/* <DarkModeButton /> */}
+        {/* <VerificationCode /> */}
+        {/* <GlassButton /> */}
+        {/* <GlassButtonDarker /> */}
+        <NewGradients />
+      </div>
     </div>
   );
 }

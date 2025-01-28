@@ -51,7 +51,7 @@ export function GlassButtonDarker() {
   return (
     <div className="relative p-4 rounded-3xl flex justify-center items-center flex-row gap-3 ">
       <div className="bg-gray-300 h-64 w-64 absolute rounded-3xl shadow-neutral-500 shadow-xl"></div>
-      <button className="group active:translate-y-[0.1rem] active:scale-[99%] transition duration-300 z-20 flex justify-center items-center relative h-12 w-36 rounded-full bg-gray-200 overflow-hidden">
+      <button className="group cursor-pointer active:translate-y-[0.1rem] active:scale-[99%] transition duration-300 z-20 flex justify-center items-center relative h-12 w-36 rounded-full bg-gray-200 overflow-hidden">
         {/* COLORING */}
         <div className="absolute z-100 h-10 w-[95%] bg-linear-to-t from-cyan-300 to-transparent to-30% rounded-full bottom-0 blur-sm"></div>
         {/* <div className="absolute z-100 h-10 w-[95%] bg-linear-to-t from-red-300 to-transparent to-30% rounded-full bottom-0 blur-sm"></div> */}
