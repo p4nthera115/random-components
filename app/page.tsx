@@ -29,7 +29,7 @@ import LineWebsitePageAnimation from "@/components/Dailies/LineWebsitePageAnimat
 import MenuButtons from "@/components/Dailies/MenuButtons";
 import DarkModeButton from "@/components/Dailies/DarkModeButton";
 import VerificationCode from "../components/Dailies/VerificationCode";
-import NewGradients from "@/components/Dailies/NewGradients";
+import NewGradients, { BallGradient } from "@/components/Dailies/NewGradients";
 
 export default function Home() {
   return (
@@ -68,6 +68,7 @@ export default function Home() {
         {/* <GlassButton /> */}
         {/* <GlassButtonDarker /> */}
         <NewGradients />
+        {/* <BallGradient /> */}
       </div>
     </div>
   );
