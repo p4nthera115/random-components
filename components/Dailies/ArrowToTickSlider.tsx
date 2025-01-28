@@ -22,7 +22,7 @@ export default function ArrowToTickSlider() {
           dragMomentum={false}
         >
           <motion.svg
-            className="w-14 h-14 select-none pointer-events-none drop-shadow-sm"
+            className="w-14 h-14 select-none pointer-events-none drop-shadow-xs"
             xmlns="http://www.w3.org/2000/motion.svg"
             viewBox="0 0 56 56"
             style={{ rotate: svgRotation }}
@@ -66,7 +66,7 @@ export default function ArrowToTickSlider() {
             className="absolute left-1/2 -translate-x-1/2 text-white/40 font-semibold whitespace-nowrap"
             style={{ opacity: textOpacity }}
           >
-            <span className="bg-gradient-to-r from-transparent from-35% via-white via-50% to-transparent to-65% bg-clip-text text-white/40 animate-shimmer bg-[length:300%_100%]">
+            <span className="bg-linear-to-r from-transparent from-35% via-white via-50% to-transparent to-65% bg-clip-text text-white/40 animate-shimmer bg-[length:300%_100%]">
               slide to add
             </span>
           </motion.div>

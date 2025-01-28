@@ -17,7 +17,7 @@ export default function GradientComponent() {
         className={`${instrument.className} z-10 h-96 w-56 bg-neutral-100 rounded-2xl relative overflow-hidden border border-black/5`}
       >
         <div
-          className={`absolute rotate-[24deg] translate-y-24 scale-150 h-96 w-96 bg-gradient-to-br 
+          className={`absolute rotate-[24deg] translate-y-24 scale-150 h-96 w-96 bg-linear-to-br 
            ${
              even
                ? "from-yellow-100/50 from-15% via-orange-200/80 opacity-100"
@@ -26,7 +26,7 @@ export default function GradientComponent() {
             to-40% to-neutral-100 blur-md pointer-events-none transition-all duration-700`}
         ></div>
         <div
-          className={`absolute rotate-[24deg] translate-y-24 scale-150 h-96 w-96 bg-gradient-to-br 
+          className={`absolute rotate-[24deg] translate-y-24 scale-150 h-96 w-96 bg-linear-to-br 
            ${
              !even
                ? "from-pink-200 from-15% via-indigo-300/90 opacity-100 "
@@ -74,7 +74,7 @@ function First({ even }: { even: boolean }) {
         <div className="absolute z-30 h-full w-full flex flex-col select-none">
           <div
             className={`p-4 ${
-              even ? "opacity-100" : "opacity-0 blur-sm -translate-y-4"
+              even ? "opacity-100" : "opacity-0 blur-xs -translate-y-4"
             } transition-all duration-300`}
           >
             <h2 className="text-[1.7rem] leading-8 mb-2">
@@ -88,7 +88,7 @@ function First({ even }: { even: boolean }) {
 
         <div
           className={`flex justify-center items-center h-full w-full absolute ${
-            even ? "opacity-100" : "opacity-0 blur-sm -translate-y-4"
+            even ? "opacity-100" : "opacity-0 blur-xs -translate-y-4"
           } transition-all duration-300`}
         >
           <p className="text-4xl text-black">$240,000</p>
@@ -97,7 +97,7 @@ function First({ even }: { even: boolean }) {
 
       <div
         className={`p-4 absolute bottom-0 w-full ${
-          even ? "opacity-100" : "opacity-0 blur-sm -translate-y-4"
+          even ? "opacity-100" : "opacity-0 blur-xs -translate-y-4"
         } transition-all duration-300`}
       >
         {/* Indicator */}
@@ -106,8 +106,8 @@ function First({ even }: { even: boolean }) {
           <div className={`flex w-[1px] h-6 bg-black`}></div>
         </div>
 
-        <div className="pointer-events-none mb-4 z-50 h-10 w-10 absolute flex bottom-0 right-0 bg-gradient-to-l from-neutral-100 to-transparent"></div>
-        <div className="pointer-events-none mb-4 z-50 h-10 w-10 absolute flex bottom-0 left-0 bg-gradient-to-r from-neutral-100 to-transparent"></div>
+        <div className="pointer-events-none mb-4 z-50 h-10 w-10 absolute flex bottom-0 right-0 bg-linear-to-l from-neutral-100 to-transparent"></div>
+        <div className="pointer-events-none mb-4 z-50 h-10 w-10 absolute flex bottom-0 left-0 bg-linear-to-r from-neutral-100 to-transparent"></div>
 
         {/* Slider */}
         <div className="z-40 absolute bottom-0 w-[50rem] h-1/2 flex justify-center items-end p-4 -left-1/2">
@@ -181,30 +181,30 @@ function Second({ even }: { even: boolean }) {
   const arr = [
     {
       height: "0.6rem",
-      color: "bg-gradient-to-t from-purple-200 to-violet-100",
+      color: "bg-linear-to-t from-purple-200 to-violet-100",
     },
-    { height: "1rem", color: "bg-gradient-to-t from-purple-200 to-violet-100" },
+    { height: "1rem", color: "bg-linear-to-t from-purple-200 to-violet-100" },
     {
       height: "1.8rem",
-      color: "bg-gradient-to-t from-purple-200 to-violet-100",
+      color: "bg-linear-to-t from-purple-200 to-violet-100",
     },
     {
       height: "2.8rem",
-      color: "bg-gradient-to-t from-purple-200 to-violet-100",
+      color: "bg-linear-to-t from-purple-200 to-violet-100",
     },
     {
       height: "3.7rem",
-      color: "bg-gradient-to-t from-purple-200 to-violet-100",
+      color: "bg-linear-to-t from-purple-200 to-violet-100",
     },
     {
       height: "4.7rem",
-      color: "bg-gradient-to-t from-purple-200 to-violet-100",
+      color: "bg-linear-to-t from-purple-200 to-violet-100",
     },
-    { height: "6rem", color: "bg-gradient-to-t from-purple-200 to-violet-100" },
+    { height: "6rem", color: "bg-linear-to-t from-purple-200 to-violet-100" },
     {
       height: "8.5rem",
       color:
-        "bg-gradient-to-t from-indigo-400/90  via-purple-400 to-95% to-purple-300",
+        "bg-linear-to-t from-indigo-400/90  via-purple-400 to-95% to-purple-300",
     },
   ];
 
@@ -212,7 +212,7 @@ function Second({ even }: { even: boolean }) {
     <div>
       <div
         className={`p-4 absolute ${
-          !even ? "opacity-100" : "opacity-0 blur-sm -translate-y-4"
+          !even ? "opacity-100" : "opacity-0 blur-xs -translate-y-4"
         } transition-all duration-300 select-none`}
       >
         <h2 className="text-[1.7rem] leading-8 mb-2">
@@ -225,7 +225,7 @@ function Second({ even }: { even: boolean }) {
       </div>
       <div
         className={` absolute w-full h-full ${
-          !even ? "opacity-100" : "opacity-0 blur-sm -translate-y-4"
+          !even ? "opacity-100" : "opacity-0 blur-xs -translate-y-4"
         } transition-all duration-300 `}
       >
         <div className="absolute z-50 bottom-5 flex flex-col left-2 gap-[0.35rem] font-normal font-sans text-[0.5rem] text-black/30 text-right">
@@ -242,7 +242,7 @@ function Second({ even }: { even: boolean }) {
         <div
           className={`absolute z-50  bottom-1 flex flex-row gap-[2.1rem] right-5
               ${
-                !even ? "opacity-100" : "opacity-0 blur-sm -translate-y-4"
+                !even ? "opacity-100" : "opacity-0 blur-xs -translate-y-4"
               } transition-all duration-300
             `}
         >
@@ -270,11 +270,11 @@ function Second({ even }: { even: boolean }) {
       <div
         className={`absolute w-full h-full select-none flex flex-row 
               ${
-                !even ? "opacity-100" : "opacity-0 blur-sm -translate-y-4"
+                !even ? "opacity-100" : "opacity-0 blur-xs -translate-y-4"
               } transition-all duration-300
             `}
       >
-        <div className="w-full h-20 z-30 absolute bottom-6 bg-gradient-to-t from-neutral-100 to-transparent"></div>
+        <div className="w-full h-20 z-30 absolute bottom-6 bg-linear-to-t from-neutral-100 to-transparent"></div>
         <div className="absolute bottom-6 flex flex-row gap-[1.37rem] left-[2.4rem]">
           {arr.map((_) => (
             <div className="flex flex-col gap-[1.8px] ">

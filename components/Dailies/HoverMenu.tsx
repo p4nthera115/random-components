@@ -213,7 +213,7 @@ const HoverCard = ({ collections }: { collections: string[] }) => {
               </div>
               <p className="flex text-[0.7rem] opacity-50 ">
                 Last updated:
-                <span className="bg-[#e9e6df] w-14 rounded-sm h-3 translate-y-1 ml-2"></span>
+                <span className="bg-[#e9e6df] w-14 rounded-xs h-3 translate-y-1 ml-2"></span>
               </p>
             </div>
           </motion.div>

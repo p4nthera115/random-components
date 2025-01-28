@@ -6,37 +6,37 @@ export default function BlurMenuCards() {
       title: "Finance",
       descTitle: "Drafting IMs",
       desc: "Manage and grow your wealth with our expert financial services.",
-      color: "bg-gradient-to-b from-white to-neutral-300",
+      color: "bg-linear-to-b from-white to-neutral-300",
     },
     {
       title: "Logistics",
       descTitle: "Freight Invoice",
       desc: "Optimize your supply chain with our cutting-edge logistics solutions.",
-      color: "bg-gradient-to-b from-sky-100 to-sky-300",
+      color: "bg-linear-to-b from-sky-100 to-sky-300",
     },
     {
       title: "Finance",
       descTitle: "Pitch deck analysis",
       desc: "Streamline pitch deck reviews and quickly assess and evaluate key investment opportunities.",
-      color: "bg-gradient-to-b from-orange-300 to-yellow-700",
+      color: "bg-linear-to-b from-orange-300 to-yellow-700",
     },
     {
       title: "Real Estate",
       descTitle: "Inventory Management",
       desc: "Efficiently manage your real estate portfolio with our comprehensive services.",
-      color: "bg-gradient-to-b from-lime-200 to-lime-600",
+      color: "bg-linear-to-b from-lime-200 to-lime-600",
     },
     {
       title: "Healthcare",
       descTitle: "Medical Innovations",
       desc: "Stay at the forefront of healthcare with our innovative medical solutions.",
-      color: "bg-gradient-to-b from-red-200 to-red-400",
+      color: "bg-linear-to-b from-red-200 to-red-400",
     },
     {
       title: "Real Estate",
       descTitle: "Real Estate Development",
       desc: "Transform communities with our expert real estate development services.",
-      color: "bg-gradient-to-b from-blue-300 to-blue-600",
+      color: "bg-linear-to-b from-blue-300 to-blue-600",
     },
   ];
 

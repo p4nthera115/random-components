@@ -9,7 +9,7 @@ export default function GradientComponent() {
     <div
       className={`${instrument.className} aspect-[9/19.5] z-10 h-96 w-56 bg-neutral-200 rounded-2xl relative overflow-hidden border border-black/15`}
     >
-      <div className="absolute rotate-[24deg] translate-y-24 scale-150 h-96 w-96 bg-gradient-to-br from-yellow-100/50 from-15% via-orange-200/80 to-40% to-neutral-100 blur-md pointer-events-none"></div>
+      <div className="absolute rotate-[24deg] translate-y-24 scale-150 h-96 w-96 bg-linear-to-br from-yellow-100/50 from-15% via-orange-200/80 to-40% to-neutral-100 blur-md pointer-events-none"></div>
       <svg
         className="absolute opacity-100 mix-blend-color-burn h-96 pointer-events-none"
         viewBox="0 0 300 300"
@@ -48,8 +48,8 @@ export default function GradientComponent() {
         <div className={`flex w-[1px] h-6 bg-black`}></div>
       </div>
 
-      <div className="pointer-events-none mb-4 z-50 h-10 w-10 absolute flex bottom-0 right-0 bg-gradient-to-l from-neutral-100 to-transparent"></div>
-      <div className="pointer-events-none mb-4 z-50 h-10 w-10 absolute flex bottom-0 left-0 bg-gradient-to-r from-neutral-100 to-transparent"></div>
+      <div className="pointer-events-none mb-4 z-50 h-10 w-10 absolute flex bottom-0 right-0 bg-linear-to-l from-neutral-100 to-transparent"></div>
+      <div className="pointer-events-none mb-4 z-50 h-10 w-10 absolute flex bottom-0 left-0 bg-linear-to-r from-neutral-100 to-transparent"></div>
 
       {/* SLIDER */}
       <div className="z-40 absolute bottom-0 w-[50rem] h-1/2 flex justify-center items-end p-4 -left-1/2">

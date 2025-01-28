@@ -50,12 +50,12 @@ export default function DarkModeButton() {
           group z-10 h-24 relative w-24 active:scale-95 rounded-full border-2 transition-all  justify-center items-center flex overflow-hidden shadow-md`}
       >
         <div
-          className={`h-full w-full bg-gradient-to-b from-transparent to-neutral-200 transition-all duration-300 ${
+          className={`h-full w-full bg-linear-to-b from-transparent to-neutral-200 transition-all duration-300 ${
             buttonTheme === "dark" ? "opacity-0" : "opacity-100"
           } `}
         ></div>
         <div
-          className={`h-full w-full absolute bg-gradient-to-b from-transparent to-neutral-900 transition-all duration-100 ${
+          className={`h-full w-full absolute bg-linear-to-b from-transparent to-neutral-900 transition-all duration-100 ${
             buttonTheme === "dark" ? "opacity-100" : "opacity-0"
           }`}
         ></div>
@@ -106,7 +106,7 @@ export function DarkModeButtonVariant() {
       z-10 scale-[105%] h-24 w-24 absolute rounded-full  transition-all  justify-center items-center flex overflow-hidden shadow-md`}
       >
         <div
-          className={`h-full w-full bg-gradient-to-b from-transparent transition-all duration-00 ${
+          className={`h-full w-full bg-linear-to-b from-transparent transition-all duration-00 ${
             theme === "dark" ? "to-neutral-900" : "to-neutral-100"
           }`}
         ></div>
@@ -124,7 +124,7 @@ export function DarkModeButtonVariant() {
           z-10 h-24 w-24 active:scale-95 active:shadow-none rounded-full  transition-all  justify-center items-center flex overflow-hidden shadow-md`}
       >
         <div
-          className={`h-full w-full bg-gradient-to-b from-transparent transition-all duration-100 ${
+          className={`h-full w-full bg-linear-to-b from-transparent transition-all duration-100 ${
             theme === "dark" ? "to-neutral-950" : "to-neutral-200"
           }`}
         ></div>

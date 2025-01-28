@@ -9,7 +9,7 @@ export default function MorphMenu() {
 
   useEffect(() => {
     if (isOpen) {
-      setTimeout(() => setBlur("blur"), 300);
+      setTimeout(() => setBlur("blur-sm"), 300);
     } else {
       setBlur("");
     }
@@ -81,7 +81,7 @@ export default function MorphMenu() {
                 },
                 display: isOpen && { delay: 0.6 },
               }}
-              className={`w-full h-8 bg-white rounded-lg self-center items-center flex justify-center  ${blur} transition`}
+              className={`w-full h-8 bg-white rounded-lg self-center items-center flex justify-center  ${blur-sm} transition`}
             >
               <div className="w-full flex border rounded-lg border-black"></div>
             </motion.div>

@@ -36,7 +36,7 @@ export default function TooltipVariation() {
           />
         </svg>
 
-        <div className="relative z-30 h-full w-full p-[1px] rounded-[1.25rem] bg-gradient-to-b from-white to-[#eaeaea]">
+        <div className="relative z-30 h-full w-full p-[1px] rounded-[1.25rem] bg-linear-to-b from-white to-[#eaeaea]">
           <div className="relative z-40 h-full w-full rounded-[1.2rem] bg-[#eaeaea] p-4 flex flex-col">
             <div
               className={`${
@@ -44,7 +44,7 @@ export default function TooltipVariation() {
               } h-full bg-neutral-300 rounded-xl opacity-0 transition-all duration-200 overflow-hidden flex justify-center items-center relative`}
             >
               {/* GRADIENT */}
-              <div className="h-full z-50 w-full absolute bg-gradient-to-b from-transparent from-60% to-neutral-300"></div>
+              <div className="h-full z-50 w-full absolute bg-linear-to-b from-transparent from-60% to-neutral-300"></div>
               {/* SQUARE  */}
               <div className="absolute z-10 bg-slate-900 rounded-[0.65rem] border-2 border-[#b2b8c0] h-10 w-10 top-4 left-[2.75rem] flex justify-center items-center">
                 <FaCircleHalfStroke className="fill-white rotate-180 scale-125" />

@@ -19,7 +19,7 @@ export default function Sign() {
   console.log(animationComplete);
 
   return (
-    <div className="bg-gradient-to-b from-blue-400 to-sky-200 h-full w-full flex items-center justify-center">
+    <div className="bg-linear-to-b from-blue-400 to-sky-200 h-full w-full flex items-center justify-center">
       <motion.div className="flex relative flex-col bg-white/50 border border-white/30 rounded-3xl h-[19rem] w-72 text-neutral-950/70 text-sm font-semibold">
         <motion.div
           animate={
@@ -108,8 +108,8 @@ export default function Sign() {
           <div className="flex w-full pl-2 pr-10">
             <p className="inline">
               Redesign discovery phase for
-              <span className="inline-flex mx-2 h-4 w-4 -translate-y-[0.15rem] bg-white/50 items-center justify-center rounded-sm">
-                <span className="flex w-[0.6rem] h-[0.35rem] rounded-[0.05rem] bg-gradient-to-b from-orange-400 from-70% to-orange-200"></span>
+              <span className="inline-flex mx-2 h-4 w-4 -translate-y-[0.15rem] bg-white/50 items-center justify-center rounded-xs">
+                <span className="flex w-[0.6rem] h-[0.35rem] rounded-[0.05rem] bg-linear-to-b from-orange-400 from-70% to-orange-200"></span>
               </span>
               Brick inc.
               <span className="text-neutral-950/40"> Agreement ND327</span>

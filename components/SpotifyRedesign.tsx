@@ -531,7 +531,7 @@ export default function AlbumCarousel() {
                   type: "tween",
                   duration: 0.2,
                 }}
-                className="h-64 w-64 bg-black rounded relative overflow-hidden"
+                className="h-64 w-64 bg-black rounded-sm relative overflow-hidden"
               >
                 <Image src={album.cover} alt={album.name} fill />
               </motion.div>
