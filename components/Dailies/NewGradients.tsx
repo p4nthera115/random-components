@@ -6,14 +6,14 @@ export default function NewGradients() {
       </div>
 
 
-      <div className="relative h-20 w-58 rounded-full bg-neutral-800 flex justify-center items-center overflow-hidden">
-        <div className="size-64 rounded-full bg-conic/decreasing from-violet-700 via-lime-300 to-violet-700 animate-[spin_5s_linear_infinite]"></div >
-        <div className="absolute h-[99%] w-[99%] rounded-full bg-neutral-900 flex justify-center items-center overflow-hidden"></div>
+      <button className="cursor-pointer active:scale-[99%] transition relative h-20 w-58 rounded-full bg-neutral-800 flex justify-center items-center overflow-hidden">
+        <div className="size-64 rounded-full bg-conic/decreasing from-violet-700 via-lime-300 to-violet-700 animate-[spin_5s_linear_infinite]"></div>
+        <div className="absolute h-[99%] top-[0.5px] w-[99.5%] rounded-full bg-neutral-900 flex justify-center items-center overflow-hidden"></div>
         <span className="absolute text-lg font-medium tracking-tight z-10 bg-linear-to-r from-transparent from-35% via-white via-50% to-transparent to-65% bg-clip-text text-white/50 animate-shimmer bg-[length:300%_100%]">
           tailwindcss 4.0
           <div className="absolute opacity-70 blur-xl size-64 rounded-full bg-conic/decreasing from-violet-700 via-lime-300 to-violet-700 animate-[spin_5s_linear_infinite]"></div>
         </span>
-      </div >
+      </button>
     </>
   )
 }
