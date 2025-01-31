@@ -49,13 +49,9 @@ export default function GlassButton() {
 
 export function GlassButtonDarker() {
   return (
-    <div className="relative p-4 rounded-3xl flex justify-center items-center flex-row gap-3 ">
+    <div className="relative p-4 rounded-3xl flex justify-center items-center flex-row gap-3">
       <div className="bg-gray-300 h-64 w-64 absolute rounded-3xl shadow-neutral-500 shadow-xl"></div>
       <button className="group cursor-pointer active:translate-y-[0.1rem] active:scale-[99%] transition duration-300 z-20 flex justify-center items-center relative h-12 w-36 rounded-full bg-gray-200 overflow-hidden">
-        {/* COLORING */}
-        <div className="absolute z-100 h-10 w-[95%] bg-linear-to-t from-cyan-300 to-transparent to-30% rounded-full bottom-0 blur-sm"></div>
-        {/* <div className="absolute z-100 h-10 w-[95%] bg-linear-to-t from-red-300 to-transparent to-30% rounded-full bottom-0 blur-sm"></div> */}
-        {/* <div className="absolute z-100 h-10 w-[95%] bg-linear-to-t from-green-300 to-transparent to-30% rounded-full bottom-0 blur-sm"></div> */}
         {/* OUTER BLACK BORDER */}
         <div className="h-full w-full rounded-full bg-linear-to-b from-transparent  bg-black to-transparent blur-[5px]"></div>
         {/* TOP OUTER HIGHLIGHT */}
@@ -109,11 +105,18 @@ export function GlassButtonDarker() {
         <div className="absolute z-20 h-8 w-[8rem] rounded-full bottom-[2px] bg-linear-to-t from-gra÷y-200/80 to-15% to-transparent"></div>
         <div className="absolute z-50 h-8 w-[7rem] rounded-full bottom-[7px] bg-linear-to-t from-cyan-50/80 to-15% to-transparent"></div>
 
-        {/* HOVER ANIMATION */}
+        {/* LIGHT COLORING */}
+        <div className="absolute z-100 h-10 w-[95%] bg-linear-to-t from-cyan-300 to-transparent to-30% rounded-full bottom-0 blur-sm"></div>
 
         {/* COLOR VARIATIONS */}
-        {/* <div className="absolute z-100 h-full w-full bg-cyan-200 mix-blend-color-burn"></div> */}
-        {/* <div className="absolute z-100 h-full w-full bg-red-200 mix-blend-color-burn"></div> */}
+        {/* <div className="absolute z-90 h-full w-full rounded-full bg-cyan-200 mix-blend-color-burn overflow-hidden"></div>
+        <div className="absolute z-100 h-10 w-[80%] bg-linear-to-t from-cyan-300 to-transparent to-30% rounded-full bottom-0 blur-sm"></div> */}
+
+        {/* <div className="absolute z-100 h-full w-full rounded-full bg-green-200 mix-blend-color-burn"></div>
+        <div className="absolute z-100 h-10 w-[80%] bg-linear-to-t from-green-300 to-transparent to-30% rounded-full bottom-0 blur-sm"></div> */}
+
+        {/* <div className="absolute z-100 h-full w-full rounded-full bg-red-200 mix-blend-color-burn"></div>
+        <div className="absolute z-100 h-10 w-[80%] bg-linear-to-t from-red-300 to-transparent to-30% rounded-full bottom-0 blur-sm"></div> */}
 
       </button>
       {/* SHADOWS */}
@@ -122,4 +125,3 @@ export function GlassButtonDarker() {
     </div>
   )
 }
-
