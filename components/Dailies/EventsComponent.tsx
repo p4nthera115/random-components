@@ -139,7 +139,7 @@ function Card({ tag, icon: Icon, color, title, location, price }: CardProps) {
       </div>
 
       <div className="flex justify-between items-center">
-        <img className="size-8 rounded-md bg-neutral-700" alt="" />
+        <div className="size-8 rounded-md bg-neutral-700"></div>
         <button
           type="button"
           aria-label="Bookmark event"
