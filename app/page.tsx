@@ -31,6 +31,7 @@ import DarkModeButton from "@/components/Dailies/DarkModeButton";
 import VerificationCode from "../components/Dailies/VerificationCode";
 import NewGradients, { BallGradient } from "@/components/Dailies/NewGradients";
 import DesignJoyButton from "@/components/Dailies/DesignJoyButton";
+import EventsComponent from "@/components/Dailies/EventsComponent";
 
 export default function Home() {
   return (
@@ -70,7 +71,8 @@ export default function Home() {
         {/* <GlassButtonDarker /> */}
         {/* <NewGradients /> */}
         {/* <BallGradient /> */}
-        <DesignJoyButton />
+        {/* <DesignJoyButton /> */}
+        <EventsComponent />
       </div>
     </div>
   );

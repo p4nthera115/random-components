@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dmSans.className + ` h-dvh w-dvh overflow-hidden`}>
+      <body className={varelaRound.className + ` h-dvh w-dvh overflow-hidden`}>
         {children}
       </body>
     </html>
