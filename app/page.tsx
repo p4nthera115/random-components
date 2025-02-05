@@ -32,6 +32,7 @@ import VerificationCode from "../components/Dailies/VerificationCode";
 import NewGradients, { BallGradient } from "@/components/Dailies/NewGradients";
 import DesignJoyButton from "@/components/Dailies/DesignJoyButton";
 import EventsComponent from "@/components/Dailies/EventsComponent";
+import GoLGlider from "@/components/Dailies/GoLGlider";
 
 export default function Home() {
   return (
@@ -72,7 +73,8 @@ export default function Home() {
         {/* <NewGradients /> */}
         {/* <BallGradient /> */}
         {/* <DesignJoyButton /> */}
-        <EventsComponent />
+        {/* <EventsComponent /> */}
+        <GoLGlider />
       </div>
     </div>
   );
