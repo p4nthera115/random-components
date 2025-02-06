@@ -73,9 +73,9 @@ export default function Home() {
         {/* <NewGradients /> */}
         {/* <BallGradient /> */}
         {/* <DesignJoyButton /> */}
-        {/* <EventsComponent /> */}
+        <EventsComponent />
         {/* <GoLGlider /> */}
-        <GoLGlider2 />
+        {/* <GoLGlider2 /> */}
       </div>
     </div>
   );

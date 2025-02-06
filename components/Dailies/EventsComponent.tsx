@@ -71,12 +71,13 @@ export default function EventsComponent() {
   const activeTabStyle = tabStyle + " bg-white text-black transition duration-300";
 
   return (
-    <main className="flex flex-col w-56 text-white font-medium">
+    <main className="flex flex-col w-62 text-white font-medium">
       <header className="relative w-full bg-neutral-950 rounded-t-xl p-3 py-2 flex flex-col gap-2">
         <h1 className="text-lg tracking-tight">Explore Events</h1>
 
         <nav className="flex flex-row gap-1.5 text-[0.5rem] overflow-x-auto whitespace-nowrap scroll-smooth scroll-snap-x snap-mandatory">
-          <div className="absolute right-2 flex bg-linear-to-l from-black to-transparent h-6 w-8 pointer-events-none"></div>
+          {/* GRADIENT */}
+          <div className="absolute right-2 flex bg-linear-to-l from-black to-transparent h-8 w-8 pointer-events-none"></div>
           <button
             key={tabs[0].name}
             onClick={() => active === tabs[0].name ? setActive("") : setActive(tabs[0].name)}
@@ -110,14 +111,14 @@ export default function EventsComponent() {
       </header>
 
 
+      {/* FOLD */}
       <div className={`w-full h-0 ${active ? "border-t-12" : "delay-400 border-t-0"} transition-all border-x-5 border-b-0 border-transparent border-t-[#1a1a1a] mx-auto`}></div>
       <div className={`w-full h-0 ${active ? "border-b-12" : "delay-400 border-b-0"} transition-all border-x-5 border-t-0 border-transparent border-b-neutral-800 mx-auto`}>
-
-        <div className="flex absolute  bg-neutral-900 h-2 w-[13.4rem] -translate-y-0.5 -z-10"></div>
+        <div className="flex absolute bg-neutral-900 h-2 w-[14.9rem] -translate-y-0.5 -z-10"></div>
       </div>
 
       <section className="w-full bg-neutral-950 rounded-b-xl p-2 flex flex-col gap-2">
-        <ul className={`flex ${active ? "delay-300 h-67" : "h-0"} transition-all ease-in-out duration-300 flex-col gap-2 overflow-scroll`}>
+        <ul className={`flex ${active ? "delay-300 h-69" : "h-0"} transition-all ease-in-out duration-300 flex-col gap-2 overflow-scroll`}>
           {cards.map((card, i) => (active.toLowerCase() === card.tag || active === "All") && (
             <li
               className={`${active ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"} transition-all delay-500 duration-300 ${i > 0 && "delay-700"}`}
